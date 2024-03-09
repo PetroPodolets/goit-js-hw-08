@@ -93,6 +93,14 @@ function handleClick(event) {
 `)
 
     instance.show();
+
+    const modalEl = document.querySelector(".modal-gallery-image");
+
+    modalEl.addEventListener("click", handleCloseModal);
+
+    function handleCloseModal() {
+        instance.close();
+    }
 };
 
 
